@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NetworkConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/ServiceHosting/2011/07/NetworkConfiguration">
+  <VirtualNetworkConfiguration>
+    <Dns />
+    <VirtualNetworkSites>
+      <VirtualNetworkSite name="ADATUM-BRANCH-VNET" Location="Southeast Asia">
+        <AddressSpace>
+          <AddressPrefix>192.168.0.0/16</AddressPrefix>
+        </AddressSpace>
+        <Subnets>
+          <Subnet name="Subnet-1">
+            <AddressPrefix>192.168.0.0/24</AddressPrefix>
+          </Subnet>
+        </Subnets>
+      </VirtualNetworkSite>
+      <VirtualNetworkSite name="webnet01" Location="Southeast Asia">
+        <AddressSpace>
+          <AddressPrefix>10.0.0.0/8</AddressPrefix>
+        </AddressSpace>
+        <Subnets>
+          <Subnet name="Subnet-Web">
+            <AddressPrefix>10.0.0.0/24</AddressPrefix>
+          </Subnet>
+          <Subnet name="Subnet-DB">
+            <AddressPrefix>10.0.1.0/24</AddressPrefix>
+          </Subnet>
+        </Subnets>
+      </VirtualNetworkSite>
+    </VirtualNetworkSites>
+  </VirtualNetworkConfiguration>
+</NetworkConfiguration>
