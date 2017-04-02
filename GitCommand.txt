@@ -1,0 +1,12 @@
+git init
+
+git status
+
+git add .
+
+git commit -m "Version1"
+
+git remote add Origin https://github.com/BasheerAh/BashAZ.git
+
+git push -u Origin Master
+
